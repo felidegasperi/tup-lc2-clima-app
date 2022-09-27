@@ -7,6 +7,7 @@
     <title>TUP LC2 - TP Integrador</title>
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/pages/help.css">
 </head>
 
 <body>
@@ -16,7 +17,7 @@
         </h1>
         <nav>
             <ul>
-                <li><a href="index.html">Mi App</a></li>
+                <li><a href="index.html">Clima</a></li>
                 <li><a href="add-city.html">Agregar Ciudad</a></li>
                 <li class="current-page"><a href="#">Ayuda</a></li>
             </ul>
@@ -26,25 +27,30 @@
     <main>
         <h2>Ayuda Clima App v1.0</h2>
         <section>
-            <div>
+            <div class="informacion">
                 <p>Esta app te permite consultar el clima de una ciudad en particular utilizando la <br> api de <a
                         href="https://openweathermap.org/api" target="_blank">OpenWeaterMap</a></p>
                 <p> Para poder consultar el clima, primero deberá <a href="add-city.html">Agregar una ciudad</a> y
-                    luego<br>seleccionar la Ciudad en cuestión desde la página <a href="index.html">Clima</a>.</p>
+                    luego seleccionar la Ciudad en<br> cuestión desde la página <a href="index.html">Clima</a>.</p>
             </div>
         </section>
         <section>
-            <form>
+            <form class="formulario">
                 <ul>
-                    <li> <label>Nombre:</label>
-                    <input type="text"> </li>
-                    <li> <label>Email:</label>
-                    <input type="email"> </li>
-                    <li> <label>Mensaje:</label>
-                    <textarea></textarea> </li>
-                    <li> <button type="reset">Limpiar</button> <button type="submit">Enviar</button> </li>
+                    <li> <label>Nombre:</label> </li>
+                    <li> <input type="text"></li>
+                    <li> <label>Email:</label></li>
+                    <li> <input type="email"></li>
+                    <li> <label>Mensaje:</label></li>
+                    <li> <textarea name="mensaje" id="mensaje"></textarea></li>
+                    <li><button type="reset" class="botones" id="clearbutton">Limpiar</button> <button type="submit" class="botones">Enviar</button></li>
                 </ul>
             </form>
+        </section>
+        <section>
+            <div class="parrafo">
+                <p>Ingrese un Email valido</p>
+            </div>
         </section>
     </main>
     <footer>
